@@ -17,11 +17,11 @@ case $allowed in
     done
     printf "${cg}Copying Dotfiles\n"
     printf "${cb}  Copying Configs\n"
-    cp -ra cfg/ ~/.config
-    cp -ra home/ ~/
+    cp -ra cfg/. ~/.config
+    cp -ra home/. ~/
     printf "${cg}    Configs Copied\n"
     printf "${cb}  Copying Fonts\n"
-    cp -ran fonts/ ~/.fonts
+    cp -ran fonts/. ~/.fonts
     printf "${cg}    Fonts Copied\n"
     printf "${cg}Dotfiles Installed\n";;
   *) printf "${cr}Aborting!\n";;
