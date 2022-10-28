@@ -8,3 +8,5 @@ config_dirs=(~/.config/polybar/)
 for dir in $config_dirs; do
   cp -r $dir cfg
 done
+
+cp -r ~/.fonts/. ./fonts
